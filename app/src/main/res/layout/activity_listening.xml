@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background5"
+    tools:context=".Listening">
+
+    <Button
+        android:id="@+id/buttonAudio"
+        android:layout_width="107dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="40dp"
+        android:background="@android:drawable/ic_lock_silent_mode_off"
+        android:onClick="playAudio"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/instructionsListening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/amarante"
+        android:gravity="center"
+        android:text="Press on the button and choose the correct answer"
+        android:textColor="#000000"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAudio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="233dp"
+        android:layout_height="331dp"
+        android:layout_marginBottom="88dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/op1Listening"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:background="#F3D5AB"
+            android:fontFamily="@font/amiko"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/op2Listening"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_marginTop="15dp"
+            android:background="#F3D5AB"
+            android:fontFamily="@font/amiko"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/op3Listening"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="44dp"
+            android:background="#F3D5AB"
+            android:fontFamily="@font/amiko"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
