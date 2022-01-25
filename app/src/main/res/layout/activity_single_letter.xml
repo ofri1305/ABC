@@ -11,7 +11,7 @@
         android:id="@+id/buttonPlayLetter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="188dp"
         android:background="#000000"
         android:onClick="playLetterAudio"
         android:text="PLAY"
@@ -25,9 +25,9 @@
         android:id="@+id/imageView"
         android:layout_width="273dp"
         android:layout_height="294dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonPlayLetter"
         tools:srcCompat="@tools:sample/avatars" />
@@ -36,26 +36,28 @@
         android:id="@+id/textViewCapital"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
         android:textColor="#000000"
         android:textSize="125sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonPlayLetter"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
 
     <TextView
         android:id="@+id/textViewSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
-        android:layout_marginRight="68dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
         android:singleLine="false"
         android:textColor="#000000"
         android:textSize="125sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonPlayLetter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
 
     <Button
         android:id="@+id/buttonPlayPic"
